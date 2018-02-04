@@ -19,7 +19,7 @@ void UPositionReportTwo::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("Position Report Two reporting for duty Sir!"));
+	UE_LOG(LogTemp, Warning, TEXT("Position Report Two reporting!"));
 	
 }
 
