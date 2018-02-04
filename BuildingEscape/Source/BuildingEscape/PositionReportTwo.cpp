@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PositionReportTwo.h"
-
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UPositionReportTwo::UPositionReportTwo()
@@ -19,7 +19,9 @@ void UPositionReportTwo::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("Position Report Two reporting!"));
+	FString ObjectName = GetOwner()->GetName();
+
+	UE_LOG(LogTemp, Warning, TEXT("Position Report Two reporting %s"), *ObjectName);
 	
 }
 
